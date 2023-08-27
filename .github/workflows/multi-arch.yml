@@ -114,7 +114,7 @@ jobs:
           cp -rf $GITHUB_WORKSPACE/files .
           chmod +x files/etc/rc.local
           # export KERNEL_VERSION="$(ls packages | grep kernel | awk -F '_' '{print $2}')"
-          export KERNEL_VERSION="2.10"
+          export KERNEL_VERSION="5.10"
           sed -i "s/DEVICE_SUBTARGET/$DEVICE_SUBTARGET/g; \
             s/DEVICE_TARGET/$DEVICE_TARGET/g; \
             s/KERNEL_VERSION/$KERNEL_VERSION/g; \
